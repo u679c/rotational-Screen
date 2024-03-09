@@ -12,7 +12,7 @@
 
 1. 首先修改boot.py中的这两个参数
 
-<img src="/Users/u679c/Desktop/截屏2024-03-09 下午11.48.44.png" alt="截屏2024-03-09 下午11.48.44" style="zoom:30%;" /> 
+<img src="https://github.com/u679c/rotational-Screen/blob/main/截屏2024-03-09%20下午11.48.44.png" alt="截屏2024-03-09 下午11.48.44" style="zoom:10%;" /> 
 
 2. 修改好后将boot.py烧录进esp32中的boot作为开机启动程序（烧录教程b站都有随便找一个跟着做即可）
 
@@ -26,6 +26,11 @@
 
 6. 短接gnd和D4引脚即可发送socket信息，也可根据自己需求改代码改引脚
 
-   <img src="/Users/u679c/Downloads/IMG_3720.jpg" alt="IMG_3720" style="zoom:10%;" /> 
+   <img src="https://github.com/u679c/rotational-Screen/blob/main/IMG_3720.jpg" alt="IMG_3720" style="zoom:10%;" /> 
 
 7. 根据自己需求可以更改main.sh代码，屏幕控制指令在https://github.com/jakehilborn/displayplacer.git
+
+
+### 说明
+1. 蓝灯闪烁正在连接wifi，如果一直闪烁说明Wi-Fi连接没成功（必须要2.4Ghz，5Ghz实测不行）
+2. 蓝灯闪烁完成后短接gnd和D4发送信号
